@@ -1,4 +1,4 @@
-Bambu Labs Slicer Froject Files
+# Bambu Labs Slicer Froject Files
 
 This folder contains premade project files for the Bambu Labs A1 mini.
 
