@@ -67,7 +67,7 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 
 <img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" width="480">
 
+## Removing the Nozzle, Heat break and Z-probe
 
-
-
+Details for removing the standard nozzle and heatbreak can be found in this video: https://www.youtube.com/watch?v=bAOVA6bL-Jw
 
