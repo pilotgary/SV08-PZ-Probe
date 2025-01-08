@@ -41,7 +41,7 @@ The main mount upper inserts need to be aligned with the inside of the mounting 
 
 Make sure the inserts sit below the mating face and remove any plastic preventing the mating face from sitting flat, to ensure an airtight seal with the nozzles.
 
-<img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" height="480">
+<img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" width="480">
 
 #### Cable clamp
 
@@ -65,7 +65,7 @@ Try to keep all the magnets orientated the same way.
 
 Snap a magnets to each of the lower pair in the cover.  Slide the interface into the cover and press the two parts together.  Once the magnets are partially seated in the fan interface it can be removed and pressed against a flat surface to fully seat them.
 
-<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" height="480">
+<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" width="480">
 
 
 
