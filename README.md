@@ -29,7 +29,7 @@ The parts are designed around M3 x 6mm unflanged inserts, except for the upper t
 <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.png" height="480">
 <img alt="SV08-PZ-Nozzle-Inserts" src="./assets/SV08-PZ-Nozzle-Inserts.png" height="480">
 <img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" height="480">
-<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Inserts.png" height="480">
+<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.png" height="480">
 <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.png" height="480">
 <img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" height="480">
 <img alt="SV08-PZ-Cover-Magnets" src="./assets/SV08-PZ-Cover-Magnets.png" height="480">
