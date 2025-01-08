@@ -24,7 +24,7 @@ Bambu Slicer project files (.3mf) for the parts are available in the 3mf folder.
 ### Heat set inserts
 
 The parts are designed around M3 x 6mm unflanged inserts, except for the two on the main mount.  These should be M3 x 5mm.  The 6mm long inserts can be replaced with 5mm insert if preferred. 6mm inserts can be used instead of the 5mm if you don't mind them sticking out a little.
-<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png"  width="4800">) 
+<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png"  width="480">) 
 ![SV08-PZ-Mount-Align](https://github.com/user-attachments/assets/41fa3032-26f8-41d1-a118-2248aeb71007)
 ![SV08-PZ-Nozzle-Inserts](https://github.com/user-attachments/assets/d13f1943-6378-4680-8a46-3fc792e668b6)
 ![SV08-PZ-Interface-Inserts](https://github.com/user-attachments/assets/62375404-f2ef-4302-b78d-b9473636c500)
