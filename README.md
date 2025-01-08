@@ -25,7 +25,7 @@ Bambu Slicer project files (.3mf) for the parts are available in the 3mf folder.
 
 The parts are designed around M3 x 6mm unflanged inserts, except for the upper two on the main mount, that should be M3 x 5mm.  If preferred, 5mm long inserts can be used in all locations. Alternatively, 6mm inserts can be used everywhere, if you don't mind them sticking out a little from the main mount.  The main mount upper inserts need to be aligned with the inside of the mounting slot for maximum strength and ease of assembly.  See the image below.
 
-| <img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> | <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.png" height="480"> |
+<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.png" height="480">
 
 <img alt="SV08-PZ-Nozzle-Inserts" src="./assets/SV08-PZ-Nozzle-Inserts.png" height="480">
 <img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" height="480">
