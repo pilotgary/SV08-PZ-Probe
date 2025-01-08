@@ -23,17 +23,49 @@ Bambu Slicer project files (.3mf) for the parts are available in the 3mf folder.
 
 ### Heat set inserts
 
-The parts are designed around M3 x 6mm unflanged inserts, except for the upper two on the main mount, that should be M3 x 5mm.  If preferred, 5mm long inserts can be used in all locations. Alternatively, 6mm inserts can be used everywhere, if you don't mind them sticking out a little from the main mount.  The main mount upper inserts need to be aligned with the inside of the mounting slot for maximum strength and ease of assembly.  See the image below.
+The parts are designed around M3 x 6mm unflanged inserts, except for the upper two on the main mount, that should be M3 x 5mm.  If preferred, 5mm long inserts can be used in all locations. Alternatively, 6mm inserts can be used everywhere, if you don't mind them sticking out a little from the main mount.  
+
+All inserts should sit level or below the face of insertion.  Any plastic the bulges up should be removed, so that parts fir together without gaps.
+
+#### Main Mount
+
+The main mount upper inserts need to be aligned with the inside of the mounting slot for maximum strength and ease of assembly.  See the image below.
 
 <img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.png" height="480">
 
+#### Fan mount with nozzles
+
 <img alt="SV08-PZ-Nozzle-Inserts" src="./assets/SV08-PZ-Nozzle-Inserts.png" height="480">
+
+#### Fan mount interface
+
+Make sure the inserts sit below the mating face and remove any plastic preventing the mating face from sitting flat, to ensure an airtight seal with the nozzles.
+
 <img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" height="480">
-<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.png" height="480">
-<img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.png" height="480">
-<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" height="480">
+
+#### Cable clamp
+
+The cable clamp uses a sacrificial layer to support the counterbored screw holes.  This will need to be drilled through.
+
+<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.png" align="top" height="200">  <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.png" align="top" height="240">
+
+### Magnets
+
+This design uses 4mm diameter x 3mm long neodium magnets.  I used these ones https://www.amazon.co.uk/dp/B0C81HTXTV
+
+It is important to ensure that the magnets are inserted the correct way round.  The easiest way to ensure this is to snap the magnet to an already mounted one on the tool head and mark the non-contact face with a permanent marker.  The marked face goes at the bottom of the hole on the cover. With care, for some of the magnets, it is possible to push the mounting hole over the magnet while it is snapped in place.
+
+#### Cover
+
+Try to keep all the magnets orientated the same way.
+
 <img alt="SV08-PZ-Cover-Magnets" src="./assets/SV08-PZ-Cover-Magnets.png" height="480">
 
+#### Fan mount interface
+
+Snap a magnets to each of the lower pair in the cover.  Slide the interface into the cover and press the two parts together.  Once the magnets are partially seated in the fan interface it can be removed and pressed against a flat surface to fully seat them.
+
+<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" height="480">
 
 
 
