@@ -67,7 +67,10 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 
 <img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" width="480">
 
-## Removing the Nozzle, Heat break and Z-probe
+## Stripping the exiting toolhead
 
-Details for removing the standard nozzle and heatbreak can be found in this video: https://www.youtube.com/watch?v=bAOVA6bL-Jw
+1. Remove the standard nozzle and heatbreak as shown in this video: https://www.youtube.com/watch?v=bAOVA6bL-Jw
+2. Remove the small fan from heatsink.  Keep the screws.
+3. Disconnect the large fan from and remove it from the cover.
+6. Unscrew the Z-Probe and disconnect the cable.
 
