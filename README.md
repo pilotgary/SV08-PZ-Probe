@@ -75,11 +75,9 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
     
 2. Remove the standard nozzle and heatsink assembly as shown in this video:
    
-   <a href="http://www.youtube.com/watch?feature=player_embedded&v=bAOVA6bL-Jw
-      " target="_blank"><img src="http://img.youtube.com/vi/v=bAOVA6bL-Jw/0.jpg" 
-      alt="Nozzle change video" width="240" height="180" border="10" /></a>
+   [![Nozzle change video](http://img.youtube.com/vi/bAOVA6bL-Jw/0.jpg)](http://www.youtube.com/watch?v=bAOVA6bL-Jw)
    
-3. Remove the small fan from the heatsink.  Keep the screws.
+4. Remove the small fan from the heatsink.  Keep the screws.
    
    <img alt="Nozzle screws" src="./assets/NozzleScrews.jpg" height="480">
    
