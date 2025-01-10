@@ -70,11 +70,20 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 ## Stripping the exiting toolhead
 
 1. Disconnect the large fan and remove it from the cover.
-   <img alt="Cover screws" src="./assets/CoverScrews.jpg" height="480">
-3. Remove the standard nozzle and heatsink assembly as shown in this video:
-   https://www.youtube.com/watch?v=bAOVA6bL-Jw
-5. Remove the small fan from the heatsink.  Keep the screws.
+
+    <img alt="Cover screws" src="./assets/CoverScrews.jpg" height="480">
+    
+2. Remove the standard nozzle and heatsink assembly as shown in this video:
+   
+   <a href="http://www.youtube.com/watch?feature=player_embedded&v=bAOVA6bL-Jw
+      " target="_blank"><img src="http://img.youtube.com/vi/v=bAOVA6bL-Jw/0.jpg" 
+      alt="Nozzle change video" width="240" height="180" border="10" /></a>
+   
+3. Remove the small fan from the heatsink.  Keep the screws.
+   
    <img alt="Nozzle screws" src="./assets/NozzleScrews.jpg" height="480">
-6. Unscrew the Z-Probe and disconnect the cable.
+   
+7. Unscrew the Z-Probe and disconnect the cable. Remove the cable clamp. You can optionally disconnect the power and usb connections for clearer access.
+   
    <img alt="Toolhead screws" src="./assets/ToolheadScrews.jpg" height="480">
 
