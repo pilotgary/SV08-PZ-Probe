@@ -35,7 +35,7 @@ The main mount upper inserts need to be aligned with the inside of the mounting 
 
 #### Fan mount with nozzles
 
-<img alt="SV08-PZ-Nozzle-Inserts" src="./assets/SV08-PZ-Nozzle-Inserts.png" height="480">
+<img alt="SV08-PZ-Nozzle-Inserts" src="./assets/SV08-PZ-Nozzle-Inserts.jpg" height="480">
 
 #### Fan mount interface
 
