@@ -31,7 +31,7 @@ All inserts should sit level or below the face of insertion.  Any plastic the bu
 
 The main mount upper inserts need to be aligned with the inside of the mounting slot for maximum strength and ease of assembly.  See the image below.
 
-<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.png" height="480">
+<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.jpg" height="480">
 
 #### Fan mount with nozzles
 
@@ -41,13 +41,13 @@ The main mount upper inserts need to be aligned with the inside of the mounting 
 
 Make sure the inserts sit below the mating face and remove any plastic preventing the mating face from sitting flat, to ensure an airtight seal with the nozzles.
 
-<img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.png" width="480">
+<img alt="SV08-PZ-Interface-Inserts" src="./assets/SV08-PZ-Interface-Inserts.jpg" width="480">
 
 #### Cable clamp
 
 The cable clamp uses a sacrificial layer to support the counterbored screw holes.  This will need to be drilled through.
 
-<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.png" align="top" height="200">  <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.png" align="top" height="240">
+<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.jpg" align="top" height="200">  <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.jpg" align="top" height="240">
 
 ### Magnets
 
@@ -59,13 +59,13 @@ It is important to ensure that the magnets are inserted the correct way round.  
 
 Try to keep all the magnets orientated the same way.
 
-<img alt="SV08-PZ-Cover-Magnets" src="./assets/SV08-PZ-Cover-Magnets.png" height="480">
+<img alt="SV08-PZ-Cover-Magnets" src="./assets/SV08-PZ-Cover-Magnets.jpg" height="480">
 
 #### Fan mount interface
 
 Snap a magnets to each of the lower pair in the cover.  Slide the interface into the cover and press the two parts together.  Once the magnets are partially seated in the fan interface it can be removed and pressed against a flat surface to fully seat them.
 
-<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.png" width="480">
+<img alt="SV08-PZ-Interface-Magnets" src="./assets/SV08-PZ-Interface-Magnets.jpg" width="480">
 
 ## Stripping the exiting toolhead
 
