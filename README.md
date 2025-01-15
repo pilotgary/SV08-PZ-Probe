@@ -31,7 +31,7 @@ All inserts should sit level or below the face of insertion.  Any plastic the bu
 
 The main mount upper inserts need to be aligned with the inside of the mounting slot for maximum strength and ease of assembly.  See the image below.
 
-<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.png" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.jpg" height="480">
+<img alt="SV08-PZ-Mount-Inserts" src="./assets/SV08-PZ-Mount-Inserts.jpg" height="480"> <img alt="SV08-PZ-Mount-Align" src="./assets/SV08-PZ-Mount-Align.jpg" height="480">
 
 #### Fan mount with nozzles
 
