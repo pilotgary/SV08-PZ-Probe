@@ -47,7 +47,7 @@ Make sure the inserts sit below the mating face and remove any plastic preventin
 
 The cable clamp uses a sacrificial layer to support the counterbored screw holes.  This will need to be drilled through.
 
-<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.jpg" align="top" height="200">  <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.jpg" align="top" height="240">
+<img alt="SV08-PZ-Clamp-Insert" src="./assets/SV08-PZ-Clamp-Insert.jpg" align="top" height="240">  <img alt="SV08-PZ-Clamp-Drilling" src="./assets/SV08-PZ-Clamp-Drilling.jpg" align="top" height="240">
 
 ### Magnets
 
