@@ -87,8 +87,14 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 
 ## PZ-Probe Assembly
 
-<img alt="SV08-PZ-Assembly1" src="./assets/SV08-PZ-Assembly1.jpg" height="480">
+Align the coldside on the mount so that the cable points away from the fan ring and assemble using M3x6 buttonhead screws.  The two side screws are placed in their cut-outs and the hex driver engages in their heads through the holes in the top.
 
-<img alt="SV08-PZ-Assembly2" src="./assets/SV08-PZ-Assembly2.jpg" height="480">
+<img alt="SV08-PZ-Assembly1" src="./assets/SV08-PZ-Assembly1.jpg" height="480"> <img alt="SV08-PZ-Assembly2" src="./assets/SV08-PZ-Assembly2.jpg" height="480">
+
+Mount the PZ-probe board in place using the M2 capheads supplied with the board.  These screws will cut their own threads in the mount.
 
 <img alt="SV08-PZ-Assembly3" src="./assets/SV08-PZ-Assembly3.jpg" height="480">
+
+Loop the ribbon cable around and connect tto the pz-probe board.  Use a small zip tie to hold it in place.
+
+<img alt="SV08-PZ-Assembly44" src="./assets/SV08-PZ-Assembly4.jpg" height="480">
