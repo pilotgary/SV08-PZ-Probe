@@ -86,3 +86,9 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
    <img alt="Toolhead screws" src="./assets/ToolheadScrews.jpg" height="480">
 
 ## PZ-Probe Assembly
+
+<img alt="SV08-PZ-Assembly1" src="./assets/SV08-PZ-Assembly1.jpg" height="480">
+
+<img alt="SV08-PZ-Assembly2" src="./assets/SV08-PZ-Assembly2.jpg" height="480">
+
+<img alt="SV08-PZ-Assembly3" src="./assets/SV08-PZ-Asseembly3.jpg" height="480">
