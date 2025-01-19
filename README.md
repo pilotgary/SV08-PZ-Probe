@@ -97,4 +97,8 @@ Mount the PZ-probe board in place using the M2 capheads supplied with the board.
 
 Loop the ribbon cable around and connect tto the pz-probe board.  Use a small zip tie to hold it in place.
 
-<img alt="SV08-PZ-Assembly44" src="./assets/SV08-PZ-Assembly4.jpg" height="480">
+<img alt="SV08-PZ-Assembly4" src="./assets/SV08-PZ-Assembly4.jpg" height="480"> <img alt="SV08-PZ-Assembly4a" src="./assets/SV08-PZ-Assembly4a.jpg" height="480">
+
+Using the original 2 screws attach the cold end cooling fan.  4 holes are available but only two are needed.  The screws will cut their own thead.
+
+<img alt="SV08-PZ-Assembly5" src="./assets/SV08-PZ-Assembly5.jpg" height="480">
