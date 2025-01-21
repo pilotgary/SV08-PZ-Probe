@@ -102,3 +102,8 @@ Loop the ribbon cable around and connect tto the pz-probe board.  Use a small zi
 Using the original 2 screws attach the cold end cooling fan.  4 holes are available but only two are needed.  The screws will cut their own thead.
 
 <img alt="SV08-PZ-Assembly5" src="./assets/SV08-PZ-Assembly5.jpg" height="480">
+
+The PZ-Probe comes with a short length of bowden tube. Cut this to 33.5mm, and insert through the mount until it bottoms in the heatsink.  
+
+<img alt="SV08-PZ-Assembly6" src="./assets/SV08-PZ-Assembly6.jpg" height="480">
+
