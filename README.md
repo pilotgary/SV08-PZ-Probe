@@ -107,3 +107,11 @@ The PZ-Probe comes with a short length of bowden tube. Cut this to 33.5mm, and i
 
 <img alt="SV08-PZ-Assembly6" src="./assets/SV08-PZ-Assembly6.jpg" height="480">
 
+Insert the bowden tube into the toolhead as shown below and push up.  The mount will snap over the original heatsink mount. If the mount doesn't seat completely, trim a small amount off of the bowden tube and try again. 
+
+<img alt="SV08-PZ-Assembly7" src="./assets/SV08-PZ-Assembly7.jpg" height="480"> <img alt="SV08-PZ-Assembly8" src="./assets/SV08-PZ-Assembly8.jpg" height="480">
+
+Use two M3x20 and one M3x8 screws to secure the mount.  The screws enter from the opposite side compared to the original heatsink.
+
+<img alt="SV08-PZ-Assembly9" src="./assets/SV08-PZ-Assembly9.jpg" height="480">
+
