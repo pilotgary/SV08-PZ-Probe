@@ -122,3 +122,16 @@ Combnine the part cooling fan interface and nozzle items together with three M3x
 Fix this to the main mount with two M3x8 countersunk screws.  The next stage is the wiring and it's handy to have the fan mount in place to determine the wire lengths.
 
 <img alt="SV08-PZ-Assembly11" src="./assets/SV08-PZ-Assembly11.jpg" height="480">
+
+Slot the 5020 fan into the interface and fix with M3x25 screws and washers.  The washers help protect the fan case from splitting from the screw heads. 
+
+<img alt="SV08-PZ-Assembly12" src="./assets/SV08-PZ-Assembly12.jpg" height="480">
+
+The new screw clamp can be fitted at this stage with M3x12 screws or left until after the wiring is completed.
+
+<img alt="SV08-PZ-Assembly13" src="./assets/SV08-PZ-Assembly13.jpg" height="480">
+
+Test fit the cover to ensure the magnets snap together.
+
+<img alt="SV08-PZ-Assembly14" src="./assets/SV08-PZ-Assembly14.jpg" height="480">
+
