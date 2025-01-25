@@ -152,7 +152,7 @@ The wiring harness for the PZ-probe on the SV08 is shown below, along with the c
 A second ground wire was spliced in for the connection to an FTDI for programming the PZ-probe. This ground along with the RX and TX lines terminate in at a 3 pin Dupont connector.  
 
 <img alt="PZ-Probe-harness" src="./assets/PZ-Probe-harness.png" height="480">
-
+```
 Wire colour and their function:
     Brown - GND (0V)
     Red - PWR (3.3V-5V)
@@ -162,6 +162,7 @@ Wire colour and their function:
     Blue - UPDI
     Purple - SCL
     Grey - SDA
+```
 
 # Hotend Wiring
 
