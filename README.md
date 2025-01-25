@@ -131,7 +131,15 @@ The new screw clamp can be fitted at this stage with M3x12 screws or left until 
 
 <img alt="SV08-PZ-Assembly13" src="./assets/SV08-PZ-Assembly13.jpg" height="480">
 
-Test fit the cover to ensure the magnets snap together.
+Test fit the cover to ensure the magnets snap together. An M3x8 screw can be used to permanently fix the cover.
 
 <img alt="SV08-PZ-Assembly14" src="./assets/SV08-PZ-Assembly14.jpg" height="480">
+
+This completes the mechanical assembly.
+
+## Wiring
+
+The Sovol SV08 uses a variety of connectors. While the existing probe connector can be harvested, a second one is required for the 5V power supply.
+
+
 
