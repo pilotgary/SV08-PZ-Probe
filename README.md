@@ -147,14 +147,13 @@ Threee ground pins are available. I used the one on the UART to keep the wiring 
 
 Full details of the PZ probe wiring and programming can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
 
-The wiring harness fro the PZ-probe on the SV08 is shown below, alongh with the colour key for the wiring.  The blue, purple and grey wires were not used, but were terminated with a Dupont connector to keep things tidy.  
+The wiring harness for the PZ-probe on the SV08 is shown below, along with the colour key for the wiring.  The blue, purple and grey wires were not used, but were terminated with a Dupont connector to keep things tidy.  
 
 A second ground wire was spliced in for the connection to an FTDI for programming the PZ-probe. This ground along with the RX and TX lines terminate in at a 3 pin Dupont connector.  
 
 <img alt="PZ-Probe-harness" src="./assets/PZ-Probe-harness.png" height="480">
 
 Wire colour and their function:
-
     Brown - GND (0V)
     Red - PWR (3.3V-5V)
     Orange - Trigger
