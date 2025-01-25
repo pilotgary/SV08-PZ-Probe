@@ -145,6 +145,21 @@ The Sovol SV08 uses a variety of connectors. While the existing probe connector 
 
 Threee ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
 
+https://e3d-online.com/pages/e3d-support-pz-probe
+
+<img alt="PZ-Probe-harness" src="./assets/PZ-Probe-harness.png" height="480">
+
+Wire colour and their function:
+
+    Brown - GND (0V)
+    Red - PWR (3.3V-5V)
+    Orange - Trigger
+    Yellow - RX
+    Green - TX
+    Blue - UPDI
+    Purple - SCL
+    Grey - SDA
+
 # Hotend Wiring
 
 If you don't have the right connectors on hand, harvest the ones from the Sovol heater and thermister.  Cut them off keeping 15mm to 20mm of wire tails attached.  Fit the E3D Revo hotend to the heatsink. The Revo has Molex connectors fitted and comes with extension cables.  For the initial setup I used the extension cables, but later removed them, cutting off the Molex, and soldering the cables to the toolhead connector tails, making sure there was a little slack in the cables once connected.
