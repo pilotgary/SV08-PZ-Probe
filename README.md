@@ -256,4 +256,5 @@ deactivate_gcode:
 
 2. Press **Home All**.  If the printer completes the homing cycle all is good. If not, check the E3D PZ-probe troubleshooting section.  On my machine, I needed to set the threshold to 18 using a USB-TTL adapter.
 
-##   
+## Nozzle cleaning macro
+
