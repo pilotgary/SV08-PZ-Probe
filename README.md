@@ -145,7 +145,11 @@ The Sovol SV08 uses a variety of connectors. While the existing probe connector 
 
 Threee ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
 
-https://e3d-online.com/pages/e3d-support-pz-probe
+Full details of the PZ probe wiring and programming can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
+
+The wiring harness fro the PZ-probe on the SV08 is shown below, alongh with the colour key for the wiring.  The blue, purple and grey wires were not used, but were terminated with a Dupont connector to keep things tidy.  
+
+A second ground wire was spliced in for the connection to an FTDI for programming the PZ-probe. This ground along with the RX and TX lines terminate in at a 3 pin Dupont connector.  
 
 <img alt="PZ-Probe-harness" src="./assets/PZ-Probe-harness.png" height="480">
 
