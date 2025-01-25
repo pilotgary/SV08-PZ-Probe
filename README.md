@@ -137,9 +137,11 @@ Test fit the cover to ensure the magnets snap together. An M3x8 screw can be use
 
 This completes the mechanical assembly.
 
-## Wiring
+## PZ-Probe Wiring
 
-The Sovol SV08 uses a variety of connectors. While the existing probe connector can be harvested, a second one is required for the 5V power supply.
+The Sovol SV08 uses a variety of connectors. While the existing probe connector can be harvested, a second one is required for 5V power taken from the spare UART. Both connectors are JST-GH plugs with 1.25mm pin spacing: 5 pin for the probe and 4 pin for the UART. I used this kit from Amazon https://www.amazon.co.uk/gp/product/B0CW2NKVL7
 
+<img alt="Toolhead Board" src="./assets/Toolhead board.jpg" height="480">
 
+Threee ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
 
