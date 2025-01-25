@@ -7,6 +7,10 @@ E3D Revo PZ-Probe for the Sovol SV08
 3. To work with the Sovol branch of Klipper.
 4. 3D printed parts should not require support.
 
+> [!IMPORTANT]
+> Full details of the PZ probe can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
+> Please read these instruction thoroughly before proceeding. 
+
 ## New 3D printed parts 
 The new 3d printed parts can be found in the STEP directory.  As most modern slicers can open STEP files directly this is the preferred format for this project.
 
@@ -69,11 +73,13 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 
 ## Stripping the exiting toolhead
 
-1. Disconnect the large fan and remove it from the cover.
+1. Home the printer and raise the gantry above 250mm for ease of access with the head front and centre.
+   
+2. Disconnect the large fan and remove it from the cover.
 
     <img alt="Cover screws" src="./assets/CoverScrews.jpg" height="480">
     
-2. Remove the standard nozzle and heatsink assembly as shown in this video:
+3. Remove the standard nozzle and heatsink assembly as shown in this video:
    
    [![Nozzle change video](http://img.youtube.com/vi/bAOVA6bL-Jw/0.jpg)](http://www.youtube.com/watch?v=bAOVA6bL-Jw)
    
@@ -81,7 +87,7 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
    
    <img alt="Nozzle screws" src="./assets/NozzleScrews.jpg" height="480">
    
-7. Unscrew the Z-Probe and disconnect the cable. Remove the cable clamp. You can optionally disconnect the power and usb connections for clearer access.
+5. Unscrew the Z-Probe and disconnect the cable. Remove the cable clamp. You can optionally disconnect the power and usb connections for clearer access.
    
    <img alt="Toolhead screws" src="./assets/ToolheadScrews.jpg" height="480">
 
@@ -139,17 +145,21 @@ This completes the mechanical assembly.
 
 ## PZ-Probe Wiring
 
+> [!CAUTION]
+> The supplied Z-probe on the Sovol SV08 uses 24V power.  **DO NOT** connect the PZ-probe board to the the same pin as this will burn out the PZ-probe control board.  Use the 5V pin on the lower right UART per the image below. 
+
 The Sovol SV08 uses a variety of connectors. While the existing probe connector can be harvested, a second one is required for 5V power taken from the spare UART. Both connectors are JST-GH plugs with 1.25mm pin spacing: 5 pin for the probe and 4 pin for the UART. I used this kit from Amazon https://www.amazon.co.uk/gp/product/B0CW2NKVL7
 
 <img alt="Toolhead Board" src="./assets/Toolhead board.jpg" height="480">
 
 Threee ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
 
-Full details of the PZ probe wiring and programming can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
+> [!IMPORTANT]
+> Full details of the PZ probe wiring and programming can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
 
 The wiring harness for the PZ-probe on the SV08 is shown below, along with the colour key for the wiring.  The blue, purple and grey wires were not used, but were terminated with a Dupont connector to keep things tidy.  
 
-A second ground wire was spliced in for the connection to an FTDI for programming the PZ-probe. This ground along with the RX and TX lines terminate in at a 3 pin Dupont connector.  
+A second ground wire was spliced in for the connection to an USB-TTL or FTDI for programming the PZ-probe. This ground along with the RX and TX lines terminate in at a 3 pin Dupont connector.  
 
 <img alt="PZ-Probe-harness" src="./assets/PZ-Probe-harness.png" height="480">
 
@@ -165,7 +175,85 @@ Wire colour and their function:
     Grey - SDA
 ```
 
-# Hotend Wiring
+## Hotend Wiring
 
 If you don't have the right connectors on hand, harvest the ones from the Sovol heater and thermister.  Cut them off keeping 15mm to 20mm of wire tails attached.  Fit the E3D Revo hotend to the heatsink. The Revo has Molex connectors fitted and comes with extension cables.  For the initial setup I used the extension cables, but later removed them, cutting off the Molex, and soldering the cables to the toolhead connector tails, making sure there was a little slack in the cables once connected.
 
+## Initial Testing
+
+1. Check the wiring, making sure the PZ-probe power lead goes to the 5V pin on the UART.
+2. Power on the printer. If all is good the PZ-probe board should have an illumated red LED.
+3. Gently tap the end of the nozzle with metal ruler or screwdriver.  You should see an orange LED flash on the PZ-probe board. 
+
+## Printer Configuration
+
+The configuration below is based on the E3D document at https://e3d-online.com/pages/e3d-support-pz-probe in the Setup Guide->Firmware - Klipper section.
+
+It recommends:
+>During probing, reduce the current as much as possible without causing a stall. A good starting point is 40%, but lowering it further, if possible, will reduce the risk of damaging your bed. We have set our probing speed to 5 mm/s.
+
+### Editing printer.cfg
+
+1. Open Mainsail in the web browser, go to the machine page and edit the printer.cfg file.
+
+2. Find the [probe] section and comment out the existing entries with a # at the start of the line, so it looks similar to the below.  Your values may look different depending on what customization you have done to the default settings.
+```
+#[probe]
+#pin: extra_mcu:PB6    
+#x_offset: -17                  
+#y_offset: 10             
+#z_offset : 0
+#speed: 10  #  was 15.0
+#speed: 10.0  # was 5.0
+#samples: 3  # was 2
+#sample_retract_dist: 5.0 # was 2.0
+#lift_speed: 25 # was 50
+#samples_result: median # was average
+#samples_tolerance: 0.0125 # was 0.016
+#samples_tolerance_retries: 10 # was 2
+```
+
+4. Paste in the following text
+
+```
+#####################################################################
+#   Probe
+#####################################################################
+
+[probe] ## Other parameters in config.cfg
+pin: !extra_mcu:PB6
+x_offset: 0.001
+y_offset: 0.001
+speed: 5.0 #   Speed (in mm/s) of the Z axis when probing. The default is 5mm/s.
+samples: 2
+sample_retract_dist: 3.0
+samples_tolerance_retries: 1
+lift_speed: 10
+activate_gcode:
+    G4 P200 ;Wait 200ms
+    SET_TMC_CURRENT STEPPER=stepper_z CURRENT=0.4
+    SET_TMC_CURRENT STEPPER=stepper_z1 CURRENT=0.4
+    SET_TMC_CURRENT STEPPER=stepper_z2 CURRENT=0.4
+    SET_TMC_CURRENT STEPPER=stepper_z3 CURRENT=0.4
+deactivate_gcode:
+    {% set run_current = printer.configfile.config['tmc2209 stepper_z'].run_current | float %}
+    SET_TMC_CURRENT STEPPER=stepper_z CURRENT={run_current}
+    SET_TMC_CURRENT STEPPER=stepper_z1 CURRENT={run_current}
+    SET_TMC_CURRENT STEPPER=stepper_z2 CURRENT={run_current}
+    SET_TMC_CURRENT STEPPER=stepper_z3 CURRENT={run_current}
+```
+
+> [!NOTE]
+> The Sovol Klipper build does not allow the x_offset and y_offset values to be zero. Setting them to 1 micron (0.001mm) works well enough.
+
+4. Save and reboot
+
+## Further Testing
+
+1. Use the web interface to home the Z axis.
+   - If there is a short movement and the descent stops, the PZ-probe is probably too sensitive.  Press the button on the PZ-probe board to change the sensitivity threshold from 5 to 10.  One of the green LEDs should be lit.  Try homing again. The threshold can be further reduced to 15 with another button press. See the troubleshooting section on the E3D support page (https://e3d-online.com/pages/e3d-support-pz-probe) 
+   - Once the gantry starts to descend, tap the nozzle with a tool.  The gantry should stop descending and lift slightly and then descend again. If the descent doesn't stop, power off the printer and check the wiring.  Power the printer back on and check the configuration.  If the first tap was detected, tap the nozzle again and descent should stop.
+
+2. Press **Home All**.  If the printer completes the homing cycle all is good. If not, check the E3D PZ-probe troubleshooting section.  On my machine, I needed to set the threshold to 18 using a USB-TTL adapter.
+
+##   
