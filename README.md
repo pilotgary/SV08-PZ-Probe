@@ -348,6 +348,8 @@ gcode:
 
 Initial testing has been promising.  I printed a grid of disks, which came out well and suggested a small (+0.05 to +0.1mm) Z offset produced the best first layer.
 
+<img alt="PZ-Disks" src="./assets/PZ-Disks.jpg" height="480">
+
 I did a full bed mesh which showed a horrendous amount of curvature and probably explains the gouges in the bed when running the automatic Z compensation when the printer was new.  Attempts to adding packing to flatten the bed didn't produce adequate results.  As I had removed the magatic sheet and the PZ-Probe doesn't need a metalic surface, I tried using a 350mm x 350mm x 6mm sheet of glass as the bed. This works well as the hard surface triggers the probe more reliably.
 
 ## The future
