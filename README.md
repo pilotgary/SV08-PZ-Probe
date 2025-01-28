@@ -175,9 +175,13 @@ Wire colour and their function:
     Grey - SDA
 ```
 
+<img alt="PZ-Cable1" src="./assets/PZ-Cable1.jpg" height="480">
+
 ## Hotend Wiring
 
 If you don't have the right connectors on hand, harvest the ones from the Sovol heater and thermister.  Cut them off keeping 15mm to 20mm of wire tails attached.  Fit the E3D Revo hotend to the heatsink. The Revo has Molex connectors fitted and comes with extension cables.  For the initial setup I used the extension cables, but later removed them, cutting off the Molex, and soldering the cables to the toolhead connector tails, making sure there was a little slack in the cables once connected.
+
+<img alt="PZ-Cable2" src="./assets/PZ-Cable2.jpg" height="480">
 
 ## Initial Testing
 
