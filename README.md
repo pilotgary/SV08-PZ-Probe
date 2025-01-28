@@ -181,6 +181,8 @@ Wire colour and their function:
 
 If you don't have the right connectors on hand, harvest the ones from the Sovol heater and thermister.  Cut them off keeping 15mm to 20mm of wire tails attached.  Fit the E3D Revo hotend to the heatsink. The Revo has Molex connectors fitted and comes with extension cables.  For the initial setup I used the extension cables, but later removed them, cutting off the Molex, and soldering the cables to the toolhead connector tails, making sure there was a little slack in the cables once connected.
 
+For mine I had a new plug for the heater and re-used the one from the original thermistor.  I also used some liquid insulation tape for strain relief. 
+
 <img alt="PZ-Cable2" src="./assets/PZ-Cable2.jpg" height="480">
 
 ## Initial Testing
@@ -254,11 +256,100 @@ deactivate_gcode:
 
 ## Further Testing
 
+> [!IMPORTANT]
+> Revo hot ends can be bent if dragged across the bed.  Make sure that gantry lifts before any movements and turn off immediately if it contacts the bed.  Don't run the nozzle cleaning macro at this stage.
+
 1. Use the web interface to home the Z axis.
    - If there is a short movement and the descent stops, the PZ-probe is probably too sensitive.  Press the button on the PZ-probe board to change the sensitivity threshold from 5 to 10.  One of the green LEDs should be lit.  Try homing again. The threshold can be further reduced to 15 with another button press. See the troubleshooting section on the E3D support page (https://e3d-online.com/pages/e3d-support-pz-probe) 
    - Once the gantry starts to descend, tap the nozzle with a tool.  The gantry should stop descending and lift slightly and then descend again. If the descent doesn't stop, power off the printer and check the wiring.  Power the printer back on and check the configuration.  If the first tap was detected, tap the nozzle again and descent should stop.
 
 2. Press **Home All**.  If the printer completes the homing cycle all is good. If not, check the E3D PZ-probe troubleshooting section.  On my machine, I needed to set the threshold to 18 using a USB-TTL adapter.
 
-## Nozzle cleaning macro
+## Nozzle cleaning
 
+Using the nozzle for probing, requires it to be clean. Ideally we want to do an initial home all, then clean the nozzle followed by another Z home.   
+
+To be safe, increase the Z distances in the CLEAN_NOZZLE macro (found in Macros.cfg) by 10mm, run the macro and then decrease them in steps until the nozzle contacts with silicone wiper, without dragging or catching. 
+
+Below is a modified version of the CLEAN_NOZZLE macro. Look for the ######## HEIGHT INCREASED ######## comments for the altered lines.
+
+```
+[gcode_macro CLEAN_NOZZLE]
+gcode:
+    {% if printer.toolhead.homed_axes != "xyz" %}
+       G28 ; Home all axes if not already homed
+    {% endif %}
+    G90 ; Set to absolute positioning
+    G1 X348 Y0 Z10.3 F9000 ; Move to the cleaning start position (X348, Y0) and set Z to 0.3mm at a fast speed ######## HEIGHT INCREASED - WAS Z0.3 #######
+    M117 Nozzle heating...
+    M109 S200 ; Wait for the nozzle to heat up to 200°C
+    G91 ; Switch to relative positioning
+    G1 Z10 F300 ; Raise the nozzle by 10mm at a slow speed ######## HEIGHT UNCHANGED #######
+    G90 ; Switch back to absolute positioning
+    M106 S255 ; Turn on the fan at full speed
+    M104 S130 ; Set the nozzle temperature to 130°C without waiting
+    M117 Clean nozzle 
+    G1 X315 Y360 F9000 ; Move the nozzle to a new cleaning position at fast speed
+    G1 Z10.2 F300 ; Lower the nozzle to 0.2mm above the bed slowly ######## HEIGHT INCREASED - WAS Z0.2 #######
+    G1 X352 F4500 ; Sweep the nozzle horizontally along the X-axis at medium speed
+    ; Perform multiple passes along X and Y to clean the nozzle
+    G1 Y360 X324
+    G1 Y360 X345
+    G1 Y360 X324
+    G1 Y360 X345
+    G1 Y360 X324
+    G1 Y360 X345
+    G1 Y360 X324
+    G1 Y360 X345
+    G1 Y360 X324
+    G1 Y360 X325
+    G1 Y356 X324 Z15 ; Slightly lift Z while moving ######## HEIGHT INCREASED - WAS Z5 #######
+    G1 Z10.2 ; Lower back to 0.2mm ######## HEIGHT INCREASED - WAS Z0.2#######
+    G1 Y360 X324 ; Repeat fine movements for cleaning
+    G1 Y357 X326
+    G1 Y360 X326
+    G1 Y357 X328
+    G1 Y360 X330
+    G1 Y357 X332
+    G1 Y360 X334
+    G1 Y357 X336
+    G1 Y360 X338
+    G1 Y357 X340
+    G1 Y360 X324
+    G1 Y357 X326
+    G1 Y360 X326
+    G1 Y357 X328
+    G1 Y360 X330
+    G1 Y357 X332
+    G1 Y360 X334
+    G1 Y357 X336
+    G1 Y360 X338
+    G1 Y357 X340
+    G1 Y360 X324
+    G1 Y357 X326
+    G1 Y360 X326
+    G1 Y357 X328
+    G1 Y360 X330
+    G1 Y357 X332
+    G1 Y360 X334
+    G1 Y357 X336
+    G1 Y360 X338
+    M400 ; Wait for all movements to finish
+    M117 Clean Finish
+    M109 S130 ; Wait for the nozzle to cool down to 130°C
+    M107 ; Turn off the fan
+    G91 ; Switch to relative positioning
+    G1 Z10 F300 ; Raise the nozzle by 10mm to clear the cleaning area ######## HEIGHT UNCHANGED #######
+    G90 ; Switch back to absolute positioning
+    G28 Z0 ; Home the Z-axis to ensure it's reset
+```
+
+## Results
+
+Initial testing has been promising.  I printed a grid of disks, which came out well and suggested a small (+0.05 to +0.1mm) Z offset produced the best first layer.
+
+I did a full bed mesh which showed a horrendous amount of curvature and probably explains the gouges in the bed when running the automatic Z compensation when the printer was new.  Attempts to adding packing to flatten the bed didn't produce adequate results.  As I had removed the magatic sheet and the PZ-Probe doesn't need a metalic surface, I tried using a 350mm x 350mm x 6mm sheet of glass as the bed. This works well as the hard surface triggers the probe more reliably.
+
+## The future
+
+This is still a work in progress with more work required on the macros.  I also plan to switch the virtual X and Y endstops to microswitches.
