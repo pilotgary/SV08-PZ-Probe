@@ -352,10 +352,10 @@ Initial testing has been promising.  I printed a grid of disks, which came out w
 
 I did a full bed mesh which showed a horrendous amount of curvature (almost 1mm) and probably explains the gouges in the bed when running the automatic Z compensation when the printer was new.  Attempts to adding packing to flatten the bed didn't produce adequate results.  As I had removed the magatic sheet and the PZ-Probe doesn't need a metalic surface, I tried using a 350mm x 350mm x 6mm sheet of glass as the bed. This works well as the hard surface triggers the probe more reliably.
 
-Running the mesh with the glass bed cold, showed it was not as flat as hoped, but better with a range of 0.25mm.  Rotating the glass 90 degrees and repeating the mesh showed that the curvature rotated with the bed, so it probe has to be reading true.   
+Running the mesh with the glass bed cold, showed it was not as flat as hoped, but better with a range of 0.25mm.  Rotating the glass 90 degrees and repeating the mesh showed that the curvature rotated with the bed, so the probe has to be reading true.   
 
 <img alt="Glass1" src="./assets/Glass1.jpg" height="240"> <img alt="Glass2" src="./assets/Glass2.jpg" height="240"> <img alt="Glass3" src="./assets/Glass3.jpg" height="240"> <img alt="Glass4" src="./assets/Glass4.jpg" height="240">
 
 ## The future
 
-This is still a work in progress with more work required on the macros.  I also plan to switch the virtual X and Y endstops to microswitches.
+This is still a work in progress with more work required, espcially on the macros.  I also plan to switch the virtual X and Y endstops over to microswitches.
