@@ -1,1 +1,3 @@
-STL files
+# STL files
+
+![SV08-PZ-Parts](../assets/SV08-PZ-Parts.png)
