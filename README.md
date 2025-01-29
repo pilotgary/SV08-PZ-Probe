@@ -79,7 +79,7 @@ Snap a magnets to each of the lower pair in the cover.  Slide the interface into
 
     <img alt="Cover screws" src="./assets/CoverScrews.jpg" height="480">
     
-3. Remove the standard nozzle and heatsink assembly as shown in this video:
+3. Remove the standard nozzle and heatsink assembly. Clicking on the image below will take you to the relevant Sovol:
    
    [![Nozzle change video](http://img.youtube.com/vi/bAOVA6bL-Jw/0.jpg)](http://www.youtube.com/watch?v=bAOVA6bL-Jw)
    
