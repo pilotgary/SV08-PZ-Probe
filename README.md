@@ -21,8 +21,6 @@ The parts should be orientated correctly on import as shown below. All parts hav
 
 The prototype was printed in PETG on a Bambu Labs A1 mini, 0.16mm layer height, 3 wall loops, 100% infill.  If your Sovol SV08 has an enclosure or you plan on printing high temperature filamanets, ASA or ABS would be preferred.
 
-Bambu Slicer project files (.3mf) for the parts are available in the 3mf folder.
-
 ## Printed Part Preparation
 
 ### Heat set inserts
