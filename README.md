@@ -280,7 +280,7 @@ gcode:
        G28 ; Home all axes if not already homed
     {% endif %}
     G90 ; Set to absolute positioning
-    G1 X348 Y0 Z10.3 F9000 ; Move to the cleaning start position (X348, Y0) and set Z to 0.3mm at a fast speed ######## HEIGHT INCREASED - WAS Z0.3 #######
+    G1 X348 Y0 Z10.3 F9000 ; Move to the cleaning start position (X348, Y0) and set Z to 0.3mm ######## HEIGHT INCREASED - WAS Z0.3 #######
     M117 Nozzle heating...
     M109 S200 ; Wait for the nozzle to heat up to 200°C
     G91 ; Switch to relative positioning
