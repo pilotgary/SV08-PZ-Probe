@@ -358,4 +358,4 @@ Running the mesh with the glass bed cold, showed it was not as flat as hoped, bu
 
 ## The future
 
-This is still a work in progress with more work required, espcially on the macros.  I also plan to switch the virtual X and Y endstops over to microswitches.
+This is still a work in progress with more work required, espcially on the macros.  I also plan to switch the virtual X and Y endstops over to microswitches or optical switches.  I might switch to proper Voron 2.4 heat bed as well.
