@@ -12,7 +12,7 @@ E3D Revo PZ-Probe for the Sovol SV08
 > Please read these instruction thoroughly before proceeding. 
 
 ## New 3D printed parts 
-The new 3d printed parts can be found in the STEP directory.  As most modern slicers can open STEP files directly this is the preferred format for this project.
+The new 3d printed parts can be found in the STEP directory.  As most modern slicers can open STEP files directly this is the preferred format for this project.  STL files are available in the relevant folder
 
 The parts should be orientated correctly on import as shown below. All parts have been designed so that support is not required, provided your printer can cope with small bridges.
 
