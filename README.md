@@ -119,7 +119,7 @@ Use two M3x20 and one M3x8 screws to secure the mount.  The screws enter from th
 
 <img alt="SV08-PZ-Assembly9" src="./assets/SV08-PZ-Assembly9.jpg" height="480">
 
-Combnine the part cooling fan interface and nozzle items together with three M3x8 countersunk screws
+Combine the part cooling fan interface and nozzle items together with three M3x8 countersunk screws
 
 <img alt="SV08-PZ-Assembly10" src="./assets/SV08-PZ-Assembly10.jpg" height="480">
 
