@@ -150,7 +150,7 @@ The Sovol SV08 uses a variety of connectors. While the existing probe connector 
 
 <img alt="Toolhead Board" src="./assets/Toolhead board.jpg" height="480">
 
-Threee ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
+Three ground pins are available. I used the one on the UART to keep the wiring neat for the later addition of an X-axis limit microswitch.
 
 > [!IMPORTANT]
 > Full details of the PZ probe wiring and programming can be found on the E3D support page at https://e3d-online.com/pages/e3d-support-pz-probe
